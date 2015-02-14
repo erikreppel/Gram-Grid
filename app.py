@@ -1,8 +1,8 @@
 from flask import Flask, render_template
 from instagram.client import InstagramAPI
 
-CLIENT_ID = '6a9ded7b4f2a4ff99d20dd8d1c097e48'
-CLIENT_SECRET = 'a4103922277e4e2887e651a36493d8c3'
+CLIENT_ID = 'change this'
+CLIENT_SECRET = 'change this'
 
 api = InstagramAPI(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 popular_media = api.media_popular(count=52)
